@@ -1,3 +1,33 @@
 //-
 	- Default layout of the app
 	- At least, use it for index.html
+
+doctype html
+html
+	head
+		include ../partials/_meta
+		block pageTitle
+			title Document
+		|
+		|
+		// Styles
+		include ../partials/_styles
+
+	body
+		// Fallback javascript
+		include ../partials/_no-script
+		|
+		|
+		block navbar
+			- let activePage = 'home'
+			include ../partials/_navbar
+		|
+		|
+		block content
+		|
+		|
+		include ../partials/_footer
+		|
+		|
+		// Scripts
+		include ../partials/_scripts
