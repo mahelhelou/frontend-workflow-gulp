@@ -1,6 +1,6 @@
 # READ ME
 
-## Project Structure
+## Basic Project Structure
 
 ```bash
 .
@@ -59,16 +59,24 @@
 
 To get started quickly with a new project using this workflow, please edit the following files:
 
-### `default.pug`
+1. Change `_meta.pug` file.
+2. Change `_styles.pug` file.
+3. Change `_scripts.pug` file.
+4. Write the basic style in
+   - `_globals.scss`
+   - `_vars.scss`
+   - `_mixins.scss`
+   - `_styles-reset.scss`
+5. Write the basic JavaScript jQuery in `app.js`.
 
-## Resources
+## Resources & Tools
 
 All links & tools that I can use in this project.
 
-## Similar Web
+## Similar Websites
 
 List of websites that helped me to get an inspiration while designing this project.
 
-## Errors
+## Errors & Bugs
 
 List of errors and bugs while I design or develop this project, and how I solved them.
