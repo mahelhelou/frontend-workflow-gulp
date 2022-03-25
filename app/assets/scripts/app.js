@@ -1,1 +1,3 @@
-// Main JS file
+jQuery(function ($) {
+	// jQuery code goes here...
+});

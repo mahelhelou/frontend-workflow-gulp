@@ -1,1 +1,9 @@
-// Main SCSS
+// Libraries
+// @import 'libs/all.min.scss';
+// @import 'libs/bootstrap.min.scss';
+
+// Base
+@import 'base/mixins';
+@import 'base/vars';
+@import 'base/globals';
+@import 'base/styles-reset';
