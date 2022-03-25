@@ -4,7 +4,7 @@ const { src, dest, watch, series } = require("gulp");
 const pug = require("gulp-pug");
 
 // Styles packages
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 
 // Scripts packages
 const terser = require("gulp-terser");
@@ -31,7 +31,7 @@ function styles() {
 				outputStyle: "compressed",
 			})
 		)
-		.pipe(rename("style.css"))
+		.pipe(rename("styles.css"))
 		.pipe(dest("app/dist", { sourcemaps: "." }))
 		.pipe(browserSync.stream());
 }
@@ -47,7 +47,7 @@ function scripts() {
 	};
 	// return src([jsPath.jquery, jsPath.popper, jsPath.owl, jsPath.bootstrap, jsPath.app], { sourcemaps: true })
 	return src(Object.values(jsPath), { sourcemaps: true })
-		.pipe(concat("bundle.js"))
+		.pipe(concat("bundled.js"))
 		.pipe(terser())
 		.pipe(dest("app/dist", { sourcemaps: "." }))
 		.pipe(browserSync.stream());
