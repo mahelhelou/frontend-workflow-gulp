@@ -68,6 +68,9 @@ To get started quickly with a new project using this workflow, please edit the f
    - `_mixins.scss`
    - `_styles-reset.scss`
 5. Write the basic JavaScript jQuery in `app.js`.
+6. Change tasks' files in `gulpfile.js`
+   - Change `scripts` task
+   - Change `deploy` task
 
 ## Resources & Tools
 
